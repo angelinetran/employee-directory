@@ -15,6 +15,4 @@ Production files are in the [dist] folder.
 * HTML/CSS,
 * PHP/Codeigniter
 
-Working prototype can be viewed at: http://employee-directory.gopagoda.io/
-
-Link to HR can be viewed at: http://employee-directory.gopagoda.io/hr
+hr portion at: /hr
