@@ -1,0 +1,26 @@
+web1: #component type & number
+  #force deploy
+  #force deploy
+  name: tiny
+  document_root: /dist
+  php_error_reporting: 30719
+  php_display_errors: "1"
+  php_upload_max_filesize: "512M"
+  php_post_max_size: "512M"
+  php_max_post_size: "512M"
+  php_max_input_time: 500
+  php_max_execution_time: 5000
+  php_extensions:
+    - mysql
+    - gd
+    - eaccelerator
+    - mcrypt
+    - mysqli
+    - mbstring
+    - curl
+    - simplexml
+    - soap
+  shared_writable_dirs:
+    - dist/prewrana/expressionengine/cache
+    - dist/images/uploads
+    - dist/uploads

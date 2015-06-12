@@ -1,0 +1,230 @@
+// ====================================================================
+// Base
+//
+// These are top-level styles for things like the <body>. Properties like
+//  box-sizing, body background/font-family and more.
+// ====================================================================
+
+$font: Helvetica, Arial, sans-serif;
+$purple: #755B91;
+$light-purple: #5F87A1;
+$green: #41BEB4;
+$lime-green: #529DA8;
+$light-lme-green: #37D1BB;
+$grey4: #282B35;
+$grey3: #454A5B ;
+$grey2: #585F75;
+$grey1: #929DC1;
+textarea:focus, input:focus{
+    outline: 0;
+}
+button:focus {
+  outline: 0;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  overflow-x: hidden;
+  &.modal-open {
+    overflow: auto;
+  }
+}
+
+h1 {
+  font-family: $font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: pxtoem(47, $basepx);
+  padding: 0;
+  margin: 0;
+  color: $grey4;
+  overflow: hidden;
+  span {
+    font-family: $font;
+    font-weight: 500;
+    font-style: italic;
+    font-size: pxtoem(11, $basepx);
+  }
+}
+
+h2 {
+  font-family: $font;
+  font-weight: 700;
+  font-size: pxtoem(47, $basepx);
+}
+
+h3 {
+  font-family: $font;
+  font-weight: 400;
+  font-size: pxtoem(24, $basepx);
+  color: $grey4;
+  padding: 0;
+  margin: 15px 0;
+}
+
+h4 {
+  font-family: $font;
+  font-weight: 800;
+  font-size: pxtoem(24, $basepx);
+  color: $green;
+  padding: 0;
+  margin: 0px 0 15px 0;
+}
+
+h6 {
+  font-family: $font;
+  font-style: italic;
+  font-size: pxtoem(41, $basepx);
+  color: $green;
+  padding: 0;
+  margin: 0px 0 15px 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+p {
+  &.large-text {
+    font-family: $font;
+    font-size: pxtoem(21, $basepx);
+    line-height: pxtoem(21, $basepx);
+    margin-top: 10px;
+    color: $grey4;
+  }
+}
+
+a {
+  color: $purple;
+  &:hover {
+    color: $green;
+    text-decoration: none;
+  }
+  &.action {
+    background: $grey2;
+    font-family: 'Verlag A', 'Verlag B', Helvetica, sans-serif;
+    font-style: normal;
+    padding: 10px 10px 10px 15px;
+    width: 100%;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  &.purple {
+    background: $purple;
+    color: #fff;
+    padding-left: 30px;
+  }
+}
+
+.mobile {
+  display: block !important;
+}
+
+.mobile-hide {
+  display: none !important;
+}
+
+table {
+  width: 100%;
+  table-layout:fixed;
+  td {
+    width: 15%;
+  }
+  .btn-primary {
+    margin-bottom: 10px;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+}
+
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px !important;
+}
+
+
+.input-group {
+  margin-bottom: 20px;
+  .form-control:first-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    &.search-query {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+}
+
+.mobile .add {
+  margin-bottom: 20px;
+}
+
+.control-label {
+  margin: 15px 0 0px 0;
+  display: block
+}
+
+.form-actions {
+  margin-top: 20px;
+}
+.help-inline {
+
+  display: block;
+  color: $grey1;
+}
+@media (min-width: 480px){
+  input.search {
+    width: 375px;
+  }
+  .modal-dialog {
+    margin: 200px auto;
+  }
+  section.input_group{
+    width: 460px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-hide {
+    display: block !important;
+  }
+  .mobile {
+    display: none !important;
+  }
+  .form-horizontal .control-label{
+    text-align: left;
+  }
+
+}
